@@ -2,10 +2,10 @@
     max-width: 345px;
     margin: 20px auto;
     text-align: center;
-    background-image: linear-gradient(rgb(1rgb(2, 0, 100)67, 255),black);
+    background-image: linear-gradient(rgba(9, 0, 104, 0.681),rgb(79, 79, 255));
     border-radius: 3px;
   }
-  
+
   .weather-title {
     font-size: 1.5rem;
     margin-bottom: 10px;
