@@ -2,14 +2,20 @@
     padding: 10rem;
   }
   
-  .search-container {
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .dashboard-paper {
-    padding: 20px;
-    text-align: center;
-    margin: 20px auto;
-  }
-  
+.search-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.dashboard-paper {
+  padding: 20px;
+  text-align: center;
+  margin: 20px auto;
+
+}
+
+.dashboard-searchBar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

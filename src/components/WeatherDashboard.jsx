@@ -58,6 +58,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import WeatherCard from './WeatherCard';
 import { TextField, Button, Container, Typography, Paper } from '@mui/material';
+import { FaSearch } from "react-icons/fa";
 import './WeatherDashboard.css';
 
 const WeatherDashboard = () => {
@@ -77,28 +78,31 @@ const WeatherDashboard = () => {
 
   return (
     <Container className="dashboard-container">
+      <Container className=''/>  
       <Paper className="dashboard-paper">
         <Typography variant="h4" gutterBottom>
           Weather Dashboard
         </Typography>
-        <div className="search-container">
-          <TextField
-            label="City"
-            value={city}
-            onChange={(e) => setCity(e.target.value)}
-            variant="outlined"
-            margin="normal"
-          />
-          <Button
-            variant="contained"
-            color="primary"
-            onClick={handleSearch}
-            style={{ marginLeft: '10px' }}
-          >
-            Search
-          </Button>
-        </div>
+          <div className="search-container">
+        <div className="dashboard-searchBar">
+            <TextField
+              label="City"
+              value={city}
+              onChange={(e) => setCity(e.target.value)}
+              variant="outlined"
+              margin="normal"
+            />
+            <Button
+              variant="contained"
+              color="primary"
+              onClick={handleSearch}
+              style={{ marginLeft: '10px' }}
+              >
+              <FaSearch/>
+            </Button>
+          </div>
         {weather && <WeatherCard weather={weather} />}
+        </div>
       </Paper>
     </Container>
   );
