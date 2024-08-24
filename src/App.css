@@ -4,7 +4,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  background-image: linear-gradient(rgb(98, 132, 255),rgb(255, 71, 178)),url('');
 }
 
 .App {
